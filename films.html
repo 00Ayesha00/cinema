@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .wrapper{
+            width: 100%;
+            
+            display: inline-block;
+            
+            justify-content:center;
+            align-items:center;
+            margin-top: 75px;
+
+        }
+        body{
+background: linear-gradient(45deg, #410358, #4700bc);
+color: beige;
+        }
+         .image{
+            width: 450px;
+            position: relative;
+         }
+         img{
+            width: 100%;
+            display:inline-block ;
+            margin: auto;
+         }
+         .content{
+            width: 100%;
+         height: 100%;
+        position: absolute;
+        top:0;
+        left: 0;
+        background: rgba(0, 0,0, 5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.6s;
+
+        }
+        .content:hover{
+            opacity: 1;
+        }
+    .content h1{
+        font-size: 142px;
+        color: #487bc8;
+        margin-bottom: 10px;
+    }
+    .content p
+{
+    font-size: 21px;
+    font-weight: bold;
+    color: #fff;
+}    
+    .content > *{
+        transform: translateY(25px);
+        transition: transform 0.6s;
+    }
+    .content:hover > *{
+        transform: translateY(0px);
+
+    }
+    .grid-container{
+        display: flex;
+        align-items: center;
+        height: 300px;
+    }
+   
+    .pagination{
+
+        display: flex;
+        align-items: center;
+        background: #fff;
+        color: black;
+        padding: 10px 40px;
+        border-radius: 6px;
+    }
+    ul{
+        margin: 20px 30px;
+    }
+    ul li {
+        display: inline-block;
+        margin: 0 10px;
+        background: #ccc;
+        width: 45;
+        height: 45;
+        border-radius: 50%;
+        text-align: center;
+        cursor: pointer
+    }
+    </style>
+</head>
+<body>
+     <div class=" warapper">
+        <div class="image">
+            <img src="poster1.jpg" alt="">
+            <div class="content">
+                <h1>Dead on the Nile</h1>
+                <p>Death on the Nile is a fictional story by best-selling author, Agatha Christie, under her Hercule Poirot novel series..</p>
+                <button class="movieb"> <a href="file:///D:/html%20workspace/again/3/details.html">More details</a> </button>
+            </div>
+        </div>
+
+     </div>
+     <div class=" warapper">
+        <div class="image">
+            <img src="poster1.jpg" alt="">
+            <div class="content">
+                <h1>Dead on the Nile</h1>
+                <p>Death on the Nile is a fictional story by best-selling author, Agatha Christie, under her Hercule Poirot novel series..</p>
+                <button class="movieb"> <a href="file:///D:/html%20workspace/again/3/details.html">More details</a> </button>
+            </div>
+        </div>
+
+     </div>
+     <div class=" warapper">
+        <div class="image">
+            <img src="poster1.jpg" alt="">
+            <div class="content">
+                <h1>Dead on the Nile</h1>
+                <p>Death on the Nile is a fictional story by best-selling author, Agatha Christie, under her Hercule Poirot novel series..</p>
+                <button class="movieb"> <a href="file:///D:/html%20workspace/again/3/details.html">More details</a> </button>
+            </div>
+        </div>
+
+     </div>
+    
+<!--
+    <div class="grid-container">
+        <div class="grid-item">
+            <img id="movieimg"  src="poster1.jpg" alt=""> <br>
+            <span class="movietitle"> Dead on the Nile</span>
+        <p class="moviedesc">Death on the Nile is a fictional story by best-selling author, Agatha Christie, under her Hercule Poirot novel series...</p>
+        <button class="movieb"> <a href="file:///D:/html%20workspace/again/3/details.html">More details</a> </button> 
+        </div>
+        <div class="grid-item">
+            <img id="movieimg"  src="poster1.jpg" alt=""><br>
+            <span class="movietitle"> Dead on the Nile</span>
+        <p class="moviedesc">Death on the Nile is a fictional story by best-selling author, Agatha Christie, under her Hercule Poirot novel series...</p>
+        <button class="movieb"> <a href="file:///D:/html%20workspace/again/3/details.html">More details</a> </button> 
+        </div>
+        <div class="grid-item">
+            <img id="movieimg"  src="poster1.jpg" alt=""><br>
+            <span class="movietitle"> Dead on the Nile</span>
+        <p class="moviedesc">Death on the Nile is a fictional story by best-selling author, Agatha Christie, under her Hercule Poirot novel series...</p>
+        <button class="movieb"> <a href="file:///D:/html%20workspace/again/3/details.html">More details</a> </button> 
+        </div>
+        
+      </div>-->
+    
+      <div class="container">
+     
+        <div class="pagination">
+            <button class=" btn 1">prev</button>
+ <ul>
+    <li class="link" >1</li>
+    <li class="link" >2</li>
+    <li class="link" >3</li>
+    <li class="link" >4</li>
+    <li class="link" >5</li>
+    <li class="link" >6</li>
+    <li class="link" >7</li>
+    <li class="link" >8</li>
+ </ul>
+            <button class=" btn 1">next</button>
+        </div>
+      </div>
+
+
+
+
+   
+       
+   
+    
+</body>
+</html>

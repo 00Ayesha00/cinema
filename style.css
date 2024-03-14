@@ -1,0 +1,49 @@
+
+ 
+  body{
+    background: linear-gradient(45deg, #410358, #4700bc);
+    color: beige;
+            }
+            #nav {
+  
+    width:750px;
+    margin:0 auto;
+    list-style:none;
+    
+    }
+    #nav li {
+      
+    float:left;
+    }
+    #nav a {
+        
+        color: beige;
+    display:block;
+    text-align:center;
+    width:150px; /* fixed width */
+    text-decoration:none; 
+    }
+    .grid-container{
+        display: flex;
+        align-items: center;
+        height: 300px;
+    }
+    .grid-item{
+        flex-direction: row;
+        margin-right: 30px;
+        
+    }
+    
+    
+    footer{ 
+        text-align: center;
+        margin:auto 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        color: beige;
+    }
+
+  
+    
